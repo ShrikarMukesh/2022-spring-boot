@@ -1,0 +1,17 @@
+server:
+  port: 8901
+spring:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    properties:
+      max_allowed_packet: 2000
+  datasource:
+    url: jdbc:mysql://localhost:3306/sql_store
+    username: shrikar
+    password: Mukesh@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
