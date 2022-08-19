@@ -1,6 +1,7 @@
 package com.springopenapiexample;
 
 
+import com.springopenapiexample.model.Blog;
 import com.springopenapiexample.service.BlogService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

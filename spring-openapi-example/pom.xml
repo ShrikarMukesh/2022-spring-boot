@@ -122,9 +122,6 @@
 							<generatorName>spring</generatorName>
 							<apiPackage>com.springopenapiexample</apiPackage>
 							<modelPackage>com.springopenapiexample.model</modelPackage>
-							<!--<supportingFilesToGenerate>
-
-							</supportingFilesToGenerate>-->
 							<configOptions>
 								<delegatePattern>true</delegatePattern>
 							</configOptions>
