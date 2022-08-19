@@ -4,9 +4,8 @@ import com.store.model.Products;
 import com.store.service.ProductsService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,5 +20,12 @@ public class ProductsController {
     @GetMapping("/list")
     public List<Products> productsList(){
         return productsService.productsList();
+    }
+
+    @PostMapping("/create")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Products saveProduct(@RequestBody Products products){
+        return  productsService.saveProduct(products);
+
     }
 }
