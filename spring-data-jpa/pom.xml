@@ -5,6 +5,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>storage-service</module>
+		<module>springmongodb</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
