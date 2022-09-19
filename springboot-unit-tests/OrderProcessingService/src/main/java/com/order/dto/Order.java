@@ -1,4 +1,4 @@
-package order.dto;
+package com.order.dto;
 
 public class Order {
 

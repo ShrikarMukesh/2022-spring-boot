@@ -1,8 +1,8 @@
-package order.bo;
+package com.order.bo;
 
-import order.bo.exception.BOException;
-import order.dao.OrderDAO;
-import order.dto.Order;
+import com.order.bo.exception.BOException;
+import com.order.dao.OrderDAO;
+import com.order.dto.Order;
 
 import java.sql.SQLException;
 

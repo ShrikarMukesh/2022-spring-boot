@@ -6,7 +6,8 @@
     <modules>
         <module>couponservice</module>
 		<module>productservice</module>
-	</modules>
+        <module>OrderProcessingService</module>
+    </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

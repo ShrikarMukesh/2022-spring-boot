@@ -7,6 +7,7 @@
 		<module>storage-service</module>
 		<module>springmongodb</module>
         <module>giraffe</module>
+        <module>product-management</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

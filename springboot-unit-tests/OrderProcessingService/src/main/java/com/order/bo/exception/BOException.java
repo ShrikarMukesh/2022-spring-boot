@@ -1,4 +1,4 @@
-package order.bo.exception;
+package com.order.bo.exception;
 
 import java.sql.SQLException;
 

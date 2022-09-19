@@ -1,6 +1,6 @@
-package order.dao;
+package com.order.dao;
 
-import order.dto.Order;
+import com.order.dto.Order;
 
 import java.sql.SQLException;
 
