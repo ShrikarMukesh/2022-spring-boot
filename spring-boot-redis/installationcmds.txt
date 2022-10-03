@@ -1,0 +1,19 @@
+sudo apt install net-tools
+sudo apt update
+sudo apt install redis-server
+sudo nano /etc/redis/redis.conf
+ctrl+w supervised - write systemd
+sudo systemctl restart redis.service
+sudo systemctl status redis
+redis-cli
+ping
+set test "hello"
+get test
+exit
+sudo systemctl restart redis
+redis-cli
+get test
+sudo nano /etc/redis/redis.conf
+ctrl+w bind, remove #
+sudo systemctl restart redis
+sudo netstat -lnp | grep redis
