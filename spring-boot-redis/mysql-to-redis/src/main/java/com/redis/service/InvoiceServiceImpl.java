@@ -43,9 +43,9 @@ public class InvoiceServiceImpl implements InvoiceService {
     }
 
     @Override
-    @Cacheable(value="Invoice", key="#invId")
-    public Invoice getOneInvoice(Integer invId) {
-        Invoice invoice = invoiceRepo.findById(invId)
+    @Cacheable(value="Invoice", key="#mrn")
+    public Invoice getOneInvoice(Integer mrn) {
+        Invoice invoice = invoiceRepo.findById(mrn)
                 .orElseThrow(() -> new InvoiceNotFoundException("Invoice Not Found"));
         return invoice;
     }
