@@ -1,16 +1,20 @@
 package com.redis;
 
 import javax.persistence.criteria.CriteriaBuilder;
+import java.time.Duration;
 
 public class Test {
     public static void main(String[] args) {
-        int []arr = {1,2,4,8,9,11,14,23};
-        int element = 9;
-        int low = 0, high = arr.length-1;
-        int value = binarySearch(arr,low,high,element);
-        System.out.println("Index = "+value);
-        int result = runBinarySearchIteratively(arr,element,low,high);
-        System.out.println("element present in the index " + result);
+
+        Duration a = Duration.ofSeconds(120);
+        System.out.println(a.getSeconds());
+//        int []arr = {1,2,4,8,9,11,14,23};
+//        int element = 9;
+//        int low = 0, high = arr.length-1;
+//        int value = binarySearch(arr,low,high,element);
+//        System.out.println("Index = "+value);
+//        int result = runBinarySearchIteratively(arr,element,low,high);
+//        System.out.println("element present in the index " + result);
     }
     public static int runBinarySearchIteratively(int[] sortedArray, int key, int low, int high) {
         int index = Integer.MAX_VALUE;

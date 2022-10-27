@@ -43,7 +43,7 @@ public class InvoiceServiceImpl implements InvoiceService {
     }
 
     @Override
-    @Cacheable(value="Invoice", key="#mrn")
+    @Cacheable(value="Invoice", keyGenerator= "customKeyGenerator")
     public Invoice getOneInvoice(Integer mrn) {
         Invoice invoice = invoiceRepo.findById(mrn)
                 .orElseThrow(() -> new InvoiceNotFoundException("Invoice Not Found"));
