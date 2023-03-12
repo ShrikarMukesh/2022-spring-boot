@@ -1,22 +1,27 @@
 package com.springdatajpa.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-
 import com.springdatajpa.validation.ValidateEmployeeType;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.*;
-import java.util.Date;
+import java.sql.Date;
+import java.time.LocalDate;
 
-@Data
+@Getter
+@Setter
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "employee")
 public class Employee {
     //it should auto generate
+    @Id
+    @GeneratedValue
     private int empId;
     @NotBlank(message = "firstName shouldn't be null or empty")
     private String firstName;
