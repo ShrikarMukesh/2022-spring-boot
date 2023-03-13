@@ -4,10 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.springdatajpa.validation.ValidateEmployeeType;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.sql.Date;
 import java.time.LocalDate;
@@ -38,5 +35,6 @@ public class Employee {
 
     //custom annotation
     @ValidateEmployeeType
+    @Column(name = "employee_type")
     private String employeeType; //permanent or vendor or contractual
 }
